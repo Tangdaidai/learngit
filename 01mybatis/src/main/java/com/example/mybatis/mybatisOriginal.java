@@ -1,6 +1,7 @@
 package com.example.mybatis;
 
 import java.sql.*;
+import com.example.vo.uservo;
 
 /**
  * @author oxygenxyl
@@ -22,12 +23,15 @@ public class mybatisOriginal {
             preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, "tom");
             resultSet = preparedStatement.executeQuery();
+            uservo uservo = null;
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String username = resultSet.getString("username");
-                System.out.println("id:" + id);
-                System.out.println("username:" + username);
+                uservo = new uservo();
+                uservo.setId(id);
+                uservo.setUsername(username);
             }
+            System.out.println(uservo);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
@@ -56,3 +60,5 @@ public class mybatisOriginal {
         }
     }
 }
+
+
