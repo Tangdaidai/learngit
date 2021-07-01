@@ -1,7 +1,12 @@
 package com.example.test;
 
 import com.example.io.Resources;
+import com.example.sqlSession.SqlSession;
+import com.example.sqlSession.SqlSessionFactory;
+import com.example.sqlSession.SqlSessionFactoryBuilder;
+import org.dom4j.DocumentException;
 
+import java.beans.PropertyVetoException;
 import java.io.InputStream;
 
 /**
@@ -10,8 +15,9 @@ import java.io.InputStream;
  */
 public class IPersistenceTest {
 
-    public void test(){
+    public void test() throws DocumentException, PropertyVetoException {
         InputStream resourceAsStream = Resources.getResourceAsStream("sqlMapConfig.xml");
-
+        SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsStream);
+        SqlSession sqlSession = sqlSessionFactory.openSession();
     }
 }

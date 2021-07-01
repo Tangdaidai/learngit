@@ -2,10 +2,10 @@
 
     <!-- 数据库配置信息 -->
     <datasource>
-    <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
-    <property name="jdbcUrl" value="jdbc:mysql://139.196.46.164:3306/dai0?serverTimezone=Asia/Shanghai"/>
-    <property name="username" value="root"/>
-    <property name="password" value="123456"/>
+        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>
+        <property name="jdbcUrl" value="jdbc:mysql://139.196.46.164:3306/dai0?serverTimezone=Asia/Shanghai"/>
+        <property name="username" value="root"/>
+        <property name="password" value="123456"/>
     </datasource>
 
     <!-- 存放mapper.xml全路径 -->
