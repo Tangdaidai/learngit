@@ -2,12 +2,11 @@ package com.example.pojo;
 
 /**
  * @author oxygenxyl
- * @create 2021-07-01 0:06
+ * @create 2021-07-03 19:36
  */
 public class User {
-    //主键标识
     private Integer id;
-    //用户名
+
     private String username;
 
     private String password;
@@ -50,10 +49,9 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", username='" + username +
-                ", password=" + password +
-                ", birthday=" + birthday +
-                '\'' + '}';
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", birthday='" + birthday + '\'' +
+                '}';
     }
-
 }

@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01mybatis" />
-        <module name="02IPersistence" />
+        <module name="04mybatis_quickStarter" />
         <module name="03IPersitence" />
+        <module name="02IPersistence" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
